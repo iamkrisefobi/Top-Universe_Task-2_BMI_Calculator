@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="container_image">
+            <img src="/images/image_small.jpg" alt="small_image">
+            <h1>TOP UNIVERSE BMI CALCULATOR</h1>
+        </div>
+        <div class="container_form">
+            <form action="" method="get" id="container_form">
+                <label for="height">Height (Meters)</label>
+                <input type="number" id="height_meters" name="height_meters" value=""><br>
+                
+                <label for="height">Height (Inches)</label>
+                <input type="number" id="height_inches" name="height_inches" value=""><br>
+
+                <label for="weight">Weight (Kg.)</label>
+                <input type="number" id="weight" name="weight" value=""><br>
+
+                <label for="gender">Gender</label>
+                <input type="string" id="gender" name="gender" value=""><br>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" value=""><br>
+
+                <h2>BMI RESULT</h2> <br>
+                
+                <p id="result_div">
+                <div id="bmi_metric_result"></div>
+                <div id="bmi_imperial_result"></div>
+                </p>
+
+                <button onClick="calculateBMI()"  id="calculate" type="button" form="container_form">Calculate BMI</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>
